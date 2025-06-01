@@ -8,17 +8,14 @@ NEWSPIDER_MODULE = "douban_movie.spiders"
 ADDONS = {}
 
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "你的user_agent"
-
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
 # 最大并行数16，默认为3
 CONCURRENT_REQUESTS = 3
 
-# 等待时间0.5秒
-DOWNLOAD_DELAY = 0.5
+# 等待时间1秒,太快会封IP
+DOWNLOAD_DELAY = 1
 
 # 个人爬取偏好
 ITEM_PIPELINES = {
