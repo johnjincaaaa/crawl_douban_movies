@@ -26,5 +26,5 @@ class CrawlMovieSpider(CrawlSpider):
         description = response.xpath('//span[@property="v:summary"]/text()').get()
         description = ''.join(description).replace(' ', '').replace('\u3000', '').replace('\n', '')
         item = {'name':name,'movie_url':movie_url,'score':score,'description':description}#是一个字典
-
+        # 返回给管道保存
         return item
