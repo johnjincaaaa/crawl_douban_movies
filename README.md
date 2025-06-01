@@ -1,4 +1,3 @@
-markdown
 # Python Web Crawler Project
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
@@ -10,8 +9,8 @@ markdown
 
 - 爬取豆瓣电影Top250的电影信息（名称、评分、导演、主演等）
 - 支持数据导出到mongodb数据库
+- 支持数据导出到本地csv文件里
 - 支持电影图片爬取到本地
-- 简单的数据统计和可视化功能
 - 可配置的爬取参数（如爬取间隔、超时设置）
 
 ## 安装指南
@@ -24,30 +23,18 @@ markdown
 
 ### 安装步骤
 
-1. 克隆项目仓库：
+1. 克隆项目仓库(或者直接下载)：
    ```bash
    git clone https://github.com/yourusername/douban-movie-crawler.git
-   cd Python_code
 
-创建虚拟环境（可选但推荐）：
-bash
-python -m venv venv
-source venv/bin/activate  # Linux/MacOS
-.\venv\Scripts\activate  # Windows
+2. 安装依赖包：
+   ```bash
+   pip install -r requirements.txt
 
-安装依赖包：
-bash
-pip install -r requirements.txt
+# 好了，现在进入个人爬取偏好环节 
 
-使用方法
-配置参数
-在运行爬虫前，你可以在config.py文件中修改以下参数：
 
-python
-运行
-# config.py
-
-# 爬取设置
+## 爬取设置 setting.py
 CRAWL_DELAY = 2  # 爬取间隔(秒)，避免过快请求被封IP
 MAX_RETRIES = 3  # 请求失败时的最大重试次数
 TIMEOUT = 10  # 请求超时时间(秒)
