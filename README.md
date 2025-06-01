@@ -27,7 +27,7 @@ markdown
 1. 克隆项目仓库：
    ```bash
    git clone https://github.com/yourusername/douban-movie-crawler.git
-   cd douban-movie-crawler
+   cd Python_code
 
 创建虚拟环境（可选但推荐）：
 bash
