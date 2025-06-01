@@ -31,5 +31,8 @@ ITEM_PIPELINES = {
 # 图片保存的位置，默认当前路径
 IMAGES_STORE = './'
 
+DOWNLOADER_MIDDLEWARES = {
+   "douban_movie.middlewares.DoubanMovieDownloaderMiddleware": 543,
+}
 
 FEED_EXPORT_ENCODING = "utf-8"
